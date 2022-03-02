@@ -10,7 +10,7 @@ class TranslateRepository {
     
     var sourceLanguageCode = "fr"
     var targetLanguageCode = "en"
-    let apiKey = "AIzaSyDChlhwxC8_JBwRUnFf6z4UWdu04Iwlbbk"
+    let apiKey = ""
     
     
     enum TranslationAPI {
