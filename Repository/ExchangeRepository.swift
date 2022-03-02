@@ -9,7 +9,7 @@ import Foundation
 
 class ExchangeRepository {
     
-    private let baseUri: String = "http://data.fixer.io/api/latest?access_key=ba105d9879c0ba1c1554a1bfd2d65b54"
+    private let baseUri: String = "http://data.fixer.io/api/latest?access_key="
 
     private var amount: Double = 0
     
