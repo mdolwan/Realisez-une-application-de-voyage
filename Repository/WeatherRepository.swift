@@ -14,7 +14,7 @@ class WeatherRepository {
     
     // var WeatherDataArray = [String]()
     private let baseUri_1: String = "https://api.openweathermap.org/data/2.5/weather?q="
-    private let baseUri_2: String = "&lang=fr&appid=fd6e172787d9ad95090458c25d064653&units=imperial"
+    private let baseUri_2: String = "&lang=fr&appid=&units=imperial"
     var session = URLSession(configuration: .default)
     
     init() {}
