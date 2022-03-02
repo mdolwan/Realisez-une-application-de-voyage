@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dbQ-3s-tpD">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ExchangeViewController-->
+        <scene sceneID="XDc-6R-ZlO">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ExchangeViewController" id="s6V-dN-LgT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="yeC-Od-Jsn"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ybq-rI-wk0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-219" y="510"/>
+        </scene>
+        <!--TranslateViewController-->
+        <scene sceneID="eeF-zA-eBx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TranslateViewController" id="MZm-sY-fnq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="dvB-7o-b3n"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A4i-xx-LFj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="410" y="510"/>
+        </scene>
+        <!--WeatherViewController-->
+        <scene sceneID="fUv-EK-Cxy">
+            <objects>
+                <viewControllerPlaceholder storyboardName="WeatherViewController" id="3TC-Y4-uiE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="UNh-CD-RYG"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cOy-sc-hOe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="510"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="JmT-it-kNI">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="dbQ-3s-tpD" customClass="TabBarController" customModule="Baluchon" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="26z-zU-Jci">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="s6V-dN-LgT" kind="relationship" relationship="viewControllers" id="r3C-SV-wnh"/>
+                        <segue destination="3TC-Y4-uiE" kind="relationship" relationship="viewControllers" id="rDV-4K-0ph"/>
+                        <segue destination="MZm-sY-fnq" kind="relationship" relationship="viewControllers" id="0mQ-yD-TH4"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fNi-Un-1cQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="79.6875"/>
+        </scene>
+    </scenes>
+</document>

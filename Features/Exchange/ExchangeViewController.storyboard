@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LRX-QZ-8Va">
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Exchange-->
+        <scene sceneID="ENs-R0-XBZ">
+            <objects>
+                <viewController id="LRX-QZ-8Va" customClass="ExchangeViewController" customModule="Baluchon" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yni-9C-ppN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Le prix du Monnaie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqx-m2-4U8">
+                                <rect key="frame" x="14" y="0.0" width="290" height="85"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="44"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                </variation>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="9wC-ge-7qr">
+                                <rect key="frame" x="15" y="135" width="290" height="210"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="OEz-jz-pmj">
+                                        <rect key="frame" x="0.0" y="0.0" width="290" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="xZT-u7-ZWH">
+                                        <rect key="frame" x="0.0" y="75" width="290" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pa0-7B-ESj">
+                                                <rect key="frame" x="0.0" y="0.0" width="233" height="60"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Exchang To -&gt;">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="21"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="exchangeCurrency:" destination="LRX-QZ-8Va" eventType="touchUpInside" id="Hhj-br-2ti"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IdN-Kf-gdD">
+                                                <rect key="frame" x="240" y="0.0" width="50" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="BKN-wT-R3S"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="us"/>
+                                                <connections>
+                                                    <action selector="swapExchange:" destination="LRX-QZ-8Va" eventType="touchUpInside" id="y6K-Vr-jBN"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ijc-da-dvM">
+                                        <rect key="frame" x="0.0" y="150" width="290" height="60"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="eW2-GX-Z7q">
+                                                <variation key="heightClass=compact-widthClass=compact" constant="50"/>
+                                            </constraint>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CUS-Oh-49w"/>
+                        <color key="backgroundColor" red="0.70350228749999999" green="0.86078917980000003" blue="0.82743734749999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="CUS-Oh-49w" firstAttribute="top" secondItem="fqx-m2-4U8" secondAttribute="top" id="M8d-7O-ROj"/>
+                            <constraint firstItem="9wC-ge-7qr" firstAttribute="centerY" secondItem="Yni-9C-ppN" secondAttribute="centerY" id="N7p-KN-KUk"/>
+                            <constraint firstItem="9wC-ge-7qr" firstAttribute="top" relation="lessThanOrEqual" secondItem="fqx-m2-4U8" secondAttribute="bottom" constant="50" id="Ukw-ky-BGo">
+                                <variation key="heightClass=compact-widthClass=compact" constant="25"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="30"/>
+                            </constraint>
+                            <constraint firstItem="fqx-m2-4U8" firstAttribute="leading" secondItem="CUS-Oh-49w" secondAttribute="leading" constant="14" id="VXM-cy-uLg"/>
+                            <constraint firstItem="fqx-m2-4U8" firstAttribute="top" secondItem="CUS-Oh-49w" secondAttribute="top" id="Vbr-mw-dGy"/>
+                            <constraint firstItem="9wC-ge-7qr" firstAttribute="centerX" secondItem="Yni-9C-ppN" secondAttribute="centerX" id="XfF-t6-d0X"/>
+                            <constraint firstItem="9wC-ge-7qr" firstAttribute="leading" secondItem="CUS-Oh-49w" secondAttribute="leading" constant="15" id="Z5f-d1-OKG"/>
+                            <constraint firstItem="CUS-Oh-49w" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="9wC-ge-7qr" secondAttribute="bottom" constant="130" id="dSI-cA-eJQ">
+                                <variation key="heightClass=compact-widthClass=compact" constant="25"/>
+                                <variation key="heightClass=compact-widthClass=regular" constant="88"/>
+                            </constraint>
+                            <constraint firstItem="fqx-m2-4U8" firstAttribute="trailing" secondItem="Yni-9C-ppN" secondAttribute="trailingMargin" id="gtS-Bx-ybR"/>
+                            <constraint firstItem="CUS-Oh-49w" firstAttribute="trailing" secondItem="9wC-ge-7qr" secondAttribute="trailing" constant="15" id="ux6-bv-CeM"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Exchange" image="dollarsign.circle" catalog="system" id="lX1-nJ-7sa"/>
+                    <connections>
+                        <outlet property="getDollarLabel" destination="Ijc-da-dvM" id="lVY-69-fs8"/>
+                        <outlet property="inputEuroTextField" destination="OEz-jz-pmj" id="jAG-tY-yCR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OJN-XB-Om5" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1181.8574514038878" y="803.27102803738308"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dollarsign.circle" catalog="system" width="128" height="121"/>
+        <image name="us" width="227" height="118"/>
+    </resources>
+</document>
